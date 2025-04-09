@@ -6,6 +6,7 @@ const Countries = ({ countriesPromise }) => {
   const [visitedCountries, setVisitedCountries] = useState([]);
   const handleVisitedCountries = (country) =>{
     const newVisitedCountries = [...visitedCountries, country];
+    //react compares the new array with the old one from reference and updates and re-renders
     setVisitedCountries(newVisitedCountries);
   }
 
